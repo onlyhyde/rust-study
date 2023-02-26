@@ -1,55 +1,18 @@
-// control flow
-// loop
-// while
-// rust에는 do while이 없음.
-// for
+// Strings
+// Rust 표준 라이브러리에는 6가지 문자열 타입이 있다.
+// 2가지를 주로 사용
+// string slice는 &str 타입으로 표현한다.
+// 1. str (string slice) 
+// 2. String
+// 두가지의 가장 큰 차이점은 string slice는 수정할 수 없음.
+// String은 수정할 수 있음.
+// string slice에서 to_string() 메서드를 호출하면 String을 얻을 수 있다.
+// or String::from() 메서드를 호출하면 String을 얻을 수 있다.
+// string slice는 내부적으로 포인터로 구성됨
+// String은 내부적으로 포인터와 길이, 용량으로 구성됨. 현재 사용중인 것보다 클 수 있음.
+
+// let msg = "abc".to_string();
+// let msg = Strings::from("abc");
 fn main() {
-    // loop {
-    //     break;
-    // }
-
-    // 루프를 빠져나가는 방법
-    // 'bob: loop {
-    //     loop {
-    //         loop {
-    //             break 'bob;
-    //         }
-    //     }
-    // }
-
-    // 루프를 계속하는 방법
-    // 'bob: loop {
-    //     loop {
-    //         continue 'bob;
-    //     }
-    // }
-
-    // while dizzy() {
-    //     // do stuff
-    // }
-    // loop {
-    //     if !dizzy() {break}
-    //     // do stuff
-    // }
-
-    // iter()는 collection의 iterator를 반환
-    // collection의 순서가 있는 경우, 순서대로,
-    // collection의 순서가 없는 경우, 임의의 순서로
-    // for num in [7, 8, 9].iter() {
-    //     // do stuff with num
-    // }
-
-    // for 루프는 패턴을 사용하여 수신한 항목을 분해하고 내부 부분을 변수에 바인딩할 수 있음
-    // let array = [(1,2),(3,4)];
-    // for (x,y) in array.iter() {
-    //     // do stuff with x and y
-    // }
-
-    // for loop에 range를 사용하고 싶을 때
-    // for num in 0..50 {  // 0부터 49까지 반복
-    //     // do stuff with num
-    // }
-    // for num in 0..=50 {  // 0부터 50까지 반복
-    //     // do stuff with num
-    // }
+    
 }
