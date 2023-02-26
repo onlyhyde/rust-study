@@ -1,31 +1,55 @@
 // control flow
-// 조건 주위 괄호 필요 없음
-// 조건을 만족하거나, 만족하지 않을 때 구문은 반드시 중괄호로 감싸야 한다.
-// c 에서처럼 if (a == 5) a = 6; 이런 식으로 사용할 수 없음
+// loop
+// while
+// rust에는 do while이 없음.
+// for
 fn main() {
-    // let mut msg: &str = "";
-    // let num: i32 = 0;
-
-    // if num == 5 {
-    //     msg = "five";
-    // } else if num == 6 {
-    //     msg = "six";
-    // } else {
-    //     msg = "other";
+    // loop {
+    //     break;
     // }
 
-    // => 위 식은 다음과 같이 표현 가능
-    // msg = if num == 5 {
-    //     "five"  // return keyword와 세미콜론을 사용하지 않음
-    // } else if num == 6 {
-    //     "six"
-    // } else {
-    //     "other"
-    // }; // 세미콜론 사용
+    // 루프를 빠져나가는 방법
+    // 'bob: loop {
+    //     loop {
+    //         loop {
+    //             break 'bob;
+    //         }
+    //     }
+    // }
 
-    // num = if a { b } else { c };
-    // num = if a { if x { y } else { y }
-    // } else {
-    //     c
-    // };
+    // 루프를 계속하는 방법
+    // 'bob: loop {
+    //     loop {
+    //         continue 'bob;
+    //     }
+    // }
+
+    // while dizzy() {
+    //     // do stuff
+    // }
+    // loop {
+    //     if !dizzy() {break}
+    //     // do stuff
+    // }
+
+    // iter()는 collection의 iterator를 반환
+    // collection의 순서가 있는 경우, 순서대로,
+    // collection의 순서가 없는 경우, 임의의 순서로
+    // for num in [7, 8, 9].iter() {
+    //     // do stuff with num
+    // }
+
+    // for 루프는 패턴을 사용하여 수신한 항목을 분해하고 내부 부분을 변수에 바인딩할 수 있음
+    // let array = [(1,2),(3,4)];
+    // for (x,y) in array.iter() {
+    //     // do stuff with x and y
+    // }
+
+    // for loop에 range를 사용하고 싶을 때
+    // for num in 0..50 {  // 0부터 49까지 반복
+    //     // do stuff with num
+    // }
+    // for num in 0..=50 {  // 0부터 50까지 반복
+    //     // do stuff with num
+    // }
 }
