@@ -1,0 +1,20 @@
+{
+  "name": "rust-study",
+  "version": "0.1.0",
+  "description": "For rust study",
+  "main": "index.js",
+  "repository": "https://github.com/onlyhyde/rust-study.git",
+  "author": "0xtopaz <kevin.dev201@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "marp -s ./docs",
+    "build": "marp --output=dist --input-dir=./docs"
+  },
+  "keywords": [
+    "rust"
+  ],
+  "homepage": "https://github.com/onlyhyde/rust-study#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.3.1"
+  }
+}
